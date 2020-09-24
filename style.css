@@ -1,0 +1,269 @@
+@font-face {
+    font-family: Roboto-regular; 
+    src: url(fonts/Roboto-Regular.ttf); 
+   }
+   @font-face {
+    font-family: Roboto-light; 
+    src: url(fonts/Roboto-Light.ttf); 
+   }
+@font-face {
+    font-family: Roboto-bold; 
+    src: url(fonts/Roboto-Bold.ttf); 
+   }
+      @font-face {
+    font-family: Roboto-medium; 
+    src: url(fonts/Roboto-Medium.ttf); 
+   }
+
+ body{
+ 	font-family: Roboto-regular;
+ }
+
+.facts{
+	position: relative;
+	margin-top: 75px;
+	height: auto;
+	width: 100%;
+	background: url('images/parallax-bg.jpg' );
+	animation: animatedBackground 50s linear infinite;
+	background-repeat-y:no-repeat;
+	background-size: cover;
+}
+.facts::before{
+content:"";
+position: absolute;
+top:0;
+left:0;
+height: 100%;
+width: 100%;
+background: rgba(65,120,230,0.1)
+
+}
+@keyframes animatedBackground {
+    0 {
+        background-position: 0px 0px
+    }
+
+        50% {
+        background-position: -600px 0px
+    }
+
+    100% {
+        background-position: 0px 0px /* анимируем свойство background-position */
+    }
+}
+
+.facts_block{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.facts_right{
+	padding-bottom:50px;
+	margin-top:50px;
+	margin-right: 0px;
+	position: relative;
+}
+.factsh3{
+	font-family: Roboto-medium; 
+	font-size: 24px;
+	line-height: 24px;
+	color:#FFF;
+	font-weight: 400;
+	text-align: right;
+	letter-spacing: 1.5px;
+	margin-bottom: 0px;
+
+}
+.factsspan{
+	  font-family: Roboto-bold; 
+	font-size: 60px;
+	line-height: 60px;
+	color: #64b9f9;
+	text-align: right;
+	margin-top: 25px;
+		letter-spacing: 2px;
+	margin-bottom: 0px;
+
+   
+}
+	
+.factsp{
+	font-family: Roboto-medium; 
+	font-size: 16px;
+	max-width: 780px;
+	margin-top: 30px;
+	text-align: right;
+	line-height: 24px;
+	font-weight: 400;
+	margin-bottom: 24px;
+	color:#FFF;
+}
+.facts_number{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top:20px;
+
+}
+.facts_number span{
+	display: block;
+text-align: center;
+	  font-family: Roboto-bold; 
+color: white;
+font-size: 36px;
+text-align: center !important;
+
+margin: 0px !important;
+}
+.facts_number p{
+	font-family: Roboto-light; 
+text-align: center;
+	
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+
+}
+.facts_number1, .facts_number2, .facts_number3, .facts_number4{
+	padding-top:50px;
+	position: relative;
+}
+	.facts_number1::before{
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top:0px;
+		left: calc( 50% - 25px );
+		background:url('images/money-bag-with-dollar-symbol.png');
+		z-index: 9999;
+		    background-size: cover;
+
+	}
+	.facts_number2::before{
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top:0px;
+		left: calc( 50% - 25px );
+		background:url('images/multiple-users-silhouette.png');
+		z-index: 9999;
+		    background-size: cover;
+
+	}
+	.facts_number3::before{
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top:0px;
+		left: calc( 50% - 25px );
+		background:url('images/bitcoin-logo.png');
+		z-index: 9999;
+		    background-size: cover;
+
+	}
+	.facts_number4::before{
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		top:0px;
+		left: calc( 50% - 25px );
+		background:url('images/thumbs-up-hand-symbol.png');
+		z-index: 9999;
+		    background-size: cover;
+
+	}
+	.facts_left{
+	position: relative;
+		margin-top: 100px;
+		margin-left: 0px;
+	}
+	@media (max-width: 1142px) {
+.facts_right{
+		
+		margin-right: 20px;
+	}
+}
+	@media (max-width: 1030px) {
+.facts_left{
+	display: none;
+	}
+	.facts_right{
+		padding:20px;
+		margin: 0 auto;
+	}
+}
+	@media (max-width: 670px) {
+
+	.facts_number1, .facts_number2, .facts_number3, .facts_number4{
+	margin-top: 20px;
+	position: relative;
+	width: 50%;
+}
+}
+	@media (max-width: 562px) {
+
+.factsh3{
+	text-align: center;
+	
+
+}
+.factsspan{
+	text-align: center;
+	font-size: 39px;
+	line-height: 40px;
+
+}
+.factsp{
+font-size: 14px;
+	text-align: center;
+	line-height: 24px;
+}
+}
+	@media (max-width: 470px) {
+
+	.facts_number1, .facts_number2, .facts_number3, .facts_number4{
+	margin-top: 40px;
+	position: relative;
+	width: 100%;
+}
+
+}
+	@media (max-width: 400px) {
+.facts_number{
+		display: flex;
+		flex-direction: column;
+	}
+.factsspan{
+	font-size: 30px;
+	line-height: 30px;
+
+}
+.factsh3{
+
+	font-size: 19px;
+	line-height: 19px;
+
+}
+}
+	@media (max-width: 322px) {
+.factsspan{
+	font-size: 25px;
+	line-height: 25px;
+
+}
+.factsh3{
+
+	font-size: 18px;
+	line-height: 18px;
+
+}
+}
